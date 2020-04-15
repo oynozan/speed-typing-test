@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Klavye Hız Testi</title>
+	</head>
+	<style>
+
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+		
+		body {
+			background-color:#1c1c1c;
+			color:white;
+		}
+
+		table {
+			display:table;
+			margin:0 auto;
+			border:none;
+		}
+
+		input {
+			display:table;
+			margin:0 auto;
+			width:400px;
+			height:40px;
+			font-size:34px;
+			background-color:rgb(40,40,40);
+			border:1px solid lime;
+			padding:3px;
+			color:#fff;
+		}
+
+		td {
+			border-bottom:1px solid lime;
+			border-radius:3px;
+			min-width:90px;
+			font-family:"Open Sans";
+			font-size:28px;
+		}
+
+		.clock {
+			display:table;
+			margin:0 auto;
+			font-family:"Open Sans";
+			font-size:40px;
+		}
+		
+		p {
+			font-family:"Open Sans";
+			color:#fff;
+			font-size:25px;
+			display:table;
+			margin:0 auto;
+		}
+
+	</style>
+	<body>
+		<table cellspacing="6">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table><br>
+
+		<input onkeyup="input()" class="word-input">
+		<br>
+		<div class="clock">01:00</div>
+		<div class="result">
+			
+
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -11,12 +11,22 @@
 		body {
 			background-color:#1c1c1c;
 			color:white;
+			overflow: hidden;
+		}
+
+		main {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 		}
 
 		table {
-			display:table;
-			margin:0 auto;
-			border:none;
+			display: table;
+			margin: 30px auto;
+			border: none;
 		}
 
 		input {
@@ -26,14 +36,13 @@
 			height:40px;
 			font-size:34px;
 			background-color:rgb(40,40,40);
-			border:1px solid lime;
+			border:1px solid #02c81e;
 			padding:3px;
 			color:#fff;
 		}
 
 		td {
-			border-bottom:1px solid lime;
-			border-radius:3px;
+			border-bottom:1px solid #02c81e;
 			min-width:90px;
 			font-family:"Open Sans";
 			font-size:28px;
@@ -56,37 +65,37 @@
 
 	</style>
 	<body>
-		<table cellspacing="6">
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table><br>
-
-		<input onkeyup="input()" class="word-input">
-		<br>
-		<div class="clock">01:00</div>
-		<div class="result">
+		<main>
+			<table cellspacing="6">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<br>
 			
-
-
-		</div>
+			<input onkeyup="input()" class="word-input">
+			<br>
+			
+			<div class="clock">01:00</div>
+			<div class="result"></div>
+		</main>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="script.js"></script>
